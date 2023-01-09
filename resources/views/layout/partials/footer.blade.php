@@ -1,3 +1,0 @@
-<footer>
-    F
-</footer>

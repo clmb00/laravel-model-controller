@@ -31,6 +31,10 @@ class PageController extends Controller
 
         $movie = Movie::find($id);
 
+        if(!$movie){
+            abort(404, 'Movie not found in the databse');
+        }
+
         return view('details', compact('movie'));
     }
 }

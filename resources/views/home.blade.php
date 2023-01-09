@@ -1,5 +1,10 @@
-@extends('layout.layout');
+@extends('layout.layout')
 
 @section('content')
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo odio numquam odit quisquam placeat distinctio quod dicta. Quos, voluptas. Facere debitis quaerat ipsa repellat ex! Possimus dolores sit velit.</p>
+    <h1>Movies</h1>
+    <ul>
+        @foreach ($movies as $movie)
+            <li>{{ $movie->title }}</li>
+        @endforeach
+    </ul>
 @endsection

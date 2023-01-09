@@ -17,7 +17,7 @@
                           <h5 class="card-title fw-bold">{{ $movie->title }}</h5>
                           <h6 class="card-subtitle mb-2 text-muted">{{ $movie->original_title }}</h6>
                           <p class="card-text fw-bold">{{ $movie->vote }}</p>
-                          <a href="#" class="card-link text-info">About</a>
+                          <a href="{{ route('details',$movie->id) }}" class="card-link text-info">About</a>
                         </div>
                     </div>
                 </div>
